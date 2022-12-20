@@ -13,7 +13,6 @@
 .nav-link{
   margin: 15px;
 }
-
 .dropdown-menu {
   text-align: center;
   --bs-dropdown-border-color:var(--colorOne);
