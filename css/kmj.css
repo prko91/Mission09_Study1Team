@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/* 1. 눈누 ttf 파일, 다폰트 ttf 파일 폰트 적용 */
+@font-face {
+  font-family: "NEO";
+  src: url("../resources/kmj/kmj_NanumSquareNeo-bRg.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Luxerie";
+  src: url("../resources/kmj/kmj_Luxerie.ttf") format("truetype");
+}
+
+* {
+  font-family: "NEO";
+  list-style: none;
+}
+
+header {
+    background: url(../resources/kmj/kmj_header.jpg);
+    text-align: center;
+    height: 400px;
+    width: auto;
+    color: white;
+  }
+
+/*  헤더 메인 텍스트  */
+.main {
+  font-family: "Luxerie";
+  padding-top: 70px;
+  color: white;
+  font-size: 4em;
+  text-align: center;
+}
+.main_b {
+  font-family: "Luxerie";
+  font-size: 20px;
+}
+
+.otherwrap {
+  text-align: center;
+}
+
+.banner > p {
+  font-size: 20px;
+}
+
+
+/* 미디어쿼리 적용 */
+@media all and (max-width: 1065px) and (min-width: 801px) {
+  .main {
+    font-size: 3em;
+    padding-top: 125px;
+  }
+  header {
+    height: 500px;
+  }
+
+}
+@media all and (max-width: 800px) {
+  .main {
+    font-size: 35px;
+    padding-top: 100px;
+  }
+  
+  header {
+    height: 350px;
+  }
+  footer {
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+  #product .product4{
+    flex-direction: column;
+    padding-right: 30px;
+  }
+  #product .product4 h3{
+    font-size: 15px;
+    padding: 15px;
+  }
+
+}
+@media all and (max-width: 420px) {
+  .main {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  header {
+    height: 300px;
+  }
+ 
+  footer {
+    margin-bottom: 50px;
+    font-size: 10px;
+  }
+  footer div {
+    display: none;
+  }
+}
+
+  /*  우측 빠른메뉴 */
+
+.quickmenu {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  right: 10px;
+  background: none;
+  z-index: 2;
+}
+.quickmenu ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+.quickmenu ul li {
+  float: left;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.quickmenu ul li a {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 6px;
+  color: #999;
+  font-size: 12px;
+}
+.quickmenu ul li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+  /* 푸터 */
+footer {
+  background: rgb(255, 255, 255);
+  width: auto;
+  color: rgb(0, 0, 0);
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer > p {
+  text-align: center !important;
+}
+footer div a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+  opacity: 0.5;
+  color: white;
+}
+
+footer > div > a {
+  padding: 30px;
+}
+
+footer .insta {
+  background: url(../resources/kmj/kmj_ins.svg) 0 0 no-repeat;
+}
+footer .youtube {
+  background: url(../resources/kmj/kmj_youtube.svg) 0 0 no-repeat;
+}
+footer .twitter {
+  background: url(../resources/kmj/kmj_twitter.svg) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+/* 메인 인기 의류 부문 */
+h4{
+  text-align: center;
+}
+#product {
+  max-width: 800px;
+  margin:0 auto;
+  margin-top: 80px;
+}
+
+#product .product4 {
+  display: flex;
+}
+
+#product .product4 div {
+  width: 100%;
+  margin: 10px;
+
+}
+
+#product .product4 a {
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#product .product4 img {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+h3{
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+}
+.txt{
+  color: #999;
+}
+
+
+
+  /* owl */
+  .owl_main{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+
+
+  /* 쿠키 */
+  #notice_wrap {
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    top: 30px;
+    background-color: rgb(150, 148, 155);
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  #notice_wrap > img{
+    height: 350px;
+  }
+  .closewrap {
+    background-color: rgb(150, 148, 155);
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .closeBtn {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
