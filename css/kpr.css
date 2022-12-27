@@ -392,21 +392,33 @@ i:hover {
   margin-top: 35px;
 }
 
-.modalBtn {
-  height: 20px;
-  width: 80px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 3px;
-  background: #959595;
-  position: absolute;
-  right: 30px;
-  bottom: 25px;
-  text-align: center;
+
+/* cookie */
+input {
+  vertical-align: middle;
 }
-.modalBtn:hover {
+
+#notice_wrap {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 150px;
+  top: 180px;
+  box-shadow: 0 0 0 8px rgb(0, 0, 0);
+  z-index: 99;
+  
+}
+
+.closewrap {
+  background-color: #fabd43;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  padding: 5px 10px;
+  
+}
+
+.closeBtn {
+  margin: 20px;
   cursor: pointer;
-  border-radius: 3px;
-  background: #283744;
-  color: #fff;
 }
