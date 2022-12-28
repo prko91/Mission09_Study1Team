@@ -61,7 +61,9 @@ header {
     font-size: 35px;
     padding-top: 100px;
   }
-  
+  h4{
+    font-size: 20px !important;
+  }
   header {
     height: 350px;
   }
@@ -87,7 +89,9 @@ header {
   header {
     height: 300px;
   }
- 
+  h4{
+    font-size: 15px !important;
+  }
   footer {
     margin-bottom: 50px;
     font-size: 10px;
@@ -101,7 +105,7 @@ header {
 
 .quickmenu {
   position: absolute;
-  width: 30px;
+  width: 120px;
   top: 50%;
   right: 10px;
   background: none;
