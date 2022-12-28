@@ -26,14 +26,14 @@ $(document).ready(function () {
     });
 
             // 베가스 적용
-//   $(function(){
-//     $(".main").vegas({
-//       delay : 3000,
-//       slides: [
-//           { src: '../resources/kmj/brand.jpg' },
-//           { src: '../resources/kmj/jacket.jpg' },
-//           { src: '../resources/kmj/brand.jpg' },
-//           { src: '../resources/kmj/brand.jpg' },
-//       ],
-//     }) 
-// });
+  $(function(){
+    $("header").vegas({
+      delay : 3000,
+      slides: [
+          { src: '../resources/kmj/f1.jpg' },
+          { src: '../resources/kmj/f2.jpg' },
+          { src: '../resources/kmj/f3.jpg' },
+          { src: '../resources/kmj/f4.jpg' },
+      ],
+    }) 
+});
