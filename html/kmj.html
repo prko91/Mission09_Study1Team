@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
-
+    <link rel="stylesheet" href="../css/vegas.min.css">
     <!-- 7. 부트스트랩 반응형 웹 적용 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -22,11 +22,13 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
     ></script>
+    <script src="../javascript/vegas.min.js"></script>
     <script src="../javascript/jquery.cookie.js"></script>
+    <script src="../javascript/kmj.js"></script>
     <!-- 6. 챗봇 api 연동 -->
 <script>
   (function() {
@@ -68,33 +70,7 @@
     "pluginKey": "84091ac2-0c80-450c-a7c1-2b8955b6f6af"
   });
 // <!-- End Channel Plugin -->
-
-      // 우측 빠른메뉴
-      $(document).ready(function () {
-  var currentPosition = parseInt($(".quickmenu").css("top"));
-  $(window).scroll(function () {
-    var position = $(window).scrollTop();
-    $(".quickmenu")
-      .stop()
-      .animate({ top: position + currentPosition + "px" }, 1000);
-  });
-});
-
-// 3. 쿠키 적용
-
-$(function () {
-    if ($.cookie("popup") == "none") {
-      $("#notice_wrap").hide();
-    }
-    var $expiresChk = $("#expiresChk");
-    $(".closeBtn").on("click", closePop);
-    function closePop() {
-      if ($expiresChk.is(":checked")) {
-        $.cookie("popup", "none", { expires: 3, path: "/" });
-      }
-      $("#notice_wrap").fadeOut("fast");
-    }
-  });
+ 
 </script>
 </head>
     <body>
@@ -170,10 +146,10 @@ $(function () {
         </div>
     </nav>
     <p></p>
-    <p class="main">
+    <div class="main">
     Constellation, <br>
-    <p class="main_b">your fashion guide</p>  
-    </p><br>
+    <div class="main_b">your fashion guide</div>  
+    </div><br>
         </header>
         <!-- 2-1. FontAwesome 아이콘 사용
         우측 빠른메뉴 -->
@@ -194,7 +170,7 @@ $(function () {
             height="300px"
            />
            <p class="closewrap">
-            새로 입점한 브랜드
+
             <br>
             <input type="checkbox" name="expiresChk" id="expiresChk" />
             <label for="expiresChk">3일 동안 이 창 열지 않기</label>
