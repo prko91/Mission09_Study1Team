@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* 초기화 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: 'NotoSansKR';
+}
+a {
+   text-decoration: none;
+}
+
+/* common */
+.container {
+   margin: 0 auto;
+   max-width: 1200px;
+   overflow: hidden;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+#notice_wrap > .popup_img {
+   width: 300px;
+   height: 500px;
+   background-position: center;
+   box-sizing: border-box;
+   background-size: cover;
+   background-image: url(../resources/jej/pop-up.jpg);
+}
+.popup_text {
+   font-size: 20px;
+   font-weight: 800;
+   padding: 36px 0 0 0;
+   color: #fff;
+   text-align: center;
+}
+.popup_text2 {
+   font-size: 14px;
+   font-weight: 200;
+   color: #fff;
+   text-align: center;
+}
+input {
+   vertical-align: middle;
+}
+#notice_wrap {
+   width: 300px;
+   position: absolute;
+   left: 30px;
+   top: 30px;
+   box-shadow: 0 0 0 8px rgb(0, 0, 0);
+   z-index: 100;
+}
+.closewrap {
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   padding: 5px 10px;
+   margin: 0;
+}
+.closeBtn {
+   margin: 10px;
+   cursor: pointer;
+
+}
+
+/* header */
+.navbar-brand img {
+   width: 66px;
+}
+.container-fluid{
+   width: 1200PX !important;
+   background-color: #fff !important;
+}
+.fas {
+   margin-left: 20px;
+}
+/* nav hover */
+nav ul li a:hover {
+   color: #ff7b00 !important;
+}
+/* section */
+/* main_visual */
+#main_visual {
+   clear: both;
+   width: 100%;
+   height: 900px;
+   /* background-position: center;
+   background-size: cover; */
+}
+.maintext {
+   font-size: 26px;
+   color: #fff;
+   font-weight: 300;
+   margin: 400px 0 0 0;
+   box-sizing: border-box;
+   letter-spacing: -0.45px;
+   line-height: 125%;
+}
+h2 {
+   font-size: 70px;
+   color: #ffff;
+   margin: 10px 0 0 0;
+   box-sizing: border-box;
+   /* letter-spacing: -4.7px; */
+   font-weight: 100;
+   height: 500px;
+}
+.spantext{
+   font-weight: 600;
+   font-style: italic;
+}
+/* font */
+h3{
+   font-size: 38px;
+   margin: 120px 0 80px 0;
+   font-weight: bold;
+   text-align: center;
+}
+/* part1 */
+.part1 {
+   width: 376px;
+   height: 276px;
+   float: left;
+   margin: 47px 0 80PX 0;
+   background-image: url(../resources/jej/bakery1.jpg);
+   background-position: center;
+   box-sizing: border-box;
+   background-size: cover;
+   background-color: #707070;
+   background-blend-mode: multiply;
+}
+
+.part1:hover {
+   background-color: #333333;
+   background-blend-mode: multiply;
+}
+/* part2 */
+.part2 {
+   width: 790px;
+   height: 276px;
+   background-color: aqua;
+   float: left;
+   margin: 47px 0 80PX 10px;
+   background-image: url(../resources/jej/bakery2.jpg);
+   background-position: center;
+   box-sizing: border-box;
+   background-size: cover;
+   background-color: #707070;
+   background-blend-mode: multiply;
+}
+.part2text {
+   margin: 110px 0 0 0;
+   font-size: 30px;
+   color: #fff;
+   font-weight: 600;
+   text-align: center;
+}
+.part2:hover {
+   background-color: #333333;
+   background-blend-mode: multiply;
+}
+/* footer */
+footer {
+   clear: both;
+   width: 100%;
+   min-height: 246px;
+   background-color: #495057;
+   clear: both;
+   margin: 100px 0 0 0;
+}
+.text7 {
+   font-size: 20px;
+   font-weight: 100;
+   color: #f8f9fa;
+}
+.part_4box1 {
+   float: left;
+   width: 277px;
+   height: 155px;
+   margin: 27px 0 0 0;
+}
+.text8 {
+   font-size: 36px;
+   font-weight: 800;
+   color: #161a1d;
+}
+.text9 {
+   font-size: 12px;
+   font-weight: 300;
+   color: #adb5bd;
+}
+.part_4box2 {
+   float: left;
+   width: 585px;
+   height: 155px;
+   margin: 27px 0 0 30px;
+}
+.boximg5 {
+   float: left;
+   width: 175px;
+   height: 114px;
+   background-image: url(../resources/jej/bakery3.jpg);
+   background-position: center;
+   margin: 9px 0 0 0;
+}
+.text_box3 {
+   float: left;
+   width: 380px;
+   height: 114px;
+   margin: 9px 0 0 30px;
+}
+.text10 {
+   font-size: 14px;
+   font-weight: bold;
+   color: #dee2e6;
+}
+.part_4box3 {
+   float: left;
+   width: 250px;
+   height: 155px;
+   margin: 27px 0 0 30px;
+}
