@@ -10,82 +10,86 @@
   <!-- 구글 웹 폰트 -->
   <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap" rel="stylesheet">
   <!-- 바로가기 아이콘 -->
-  <link rel="shortcut ico" href="../resources/images/kpr/logo.png">
-  <link rel="icon" href="../resources/images/kpr/logo.png">
+  <link rel="shortcut ico" href="../resources/kpr/logo.png">
+  <link rel="icon" href="../resources/kpr/logo.png">
   <!-- 폰트어썸 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- CSS -->
-  <link rel="stylesheet" href="../css/kpr.css">
-  <!-- jQuery CDN-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- bootstrap.bundle.min.js@5.2.2 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
-  defer></script>
-  <script src="../javascript/jquery.cookie.js"></script>
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap.bundle.min.js@5.2.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/vegas.min.css" defer>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/kpr.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+      defer></script>
+    <!-- jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../javascript/vegas.min.js" defer></script>
+    <!-- Cookie -->
+    <script src="../javascript/jquery.cookie.js" defer></script>
+  <!-- JS -->
   <script src="../javascript/kpr.js" defer></script>
   <!-- Channel Plugin Scripts -->
-  <script>
-    (function() {
-      var w = window;
-      if (w.ChannelIO) {
-        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
       }
-      var ch = function() {
-        ch.c(arguments);
-      };
-      ch.q = [];
-      ch.c = function(args) {
-        ch.q.push(args);
-      };
-      w.ChannelIO = ch;
-      function l() {
-        if (w.ChannelIOInitialized) {
-          return;
-        }
-        w.ChannelIOInitialized = true;
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-        s.charset = 'UTF-8';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-      if (document.readyState === 'complete') {
-        l();
-      } else if (window.attachEvent) {
-        window.attachEvent('onload', l);
-      } else {
-        window.addEventListener('DOMContentLoaded', l, false);
-        window.addEventListener('load', l, false);
-      }
-    })();
-    ChannelIO('boot', {
-      "pluginKey": "27a3dcaf-7af0-48f9-bfb1-d6c4ac67ea05"
-    });
-  </script>
-  <!-- End Channel Plugin -->
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "27a3dcaf-7af0-48f9-bfb1-d6c4ac67ea05"
+  });
+</script>
+<!-- End Channel Plugin -->
 </head>
 
 <body>
-      <!-- cookie -->
-      <div id="notice_wrap">
-        <img src="images/fox.jpg" alt="fox" width="200px" height="auto"/>
-        <p class="closewrap">
-            <input type="checkbox" name="expireChk" id="expireChk" />
-            <label for="expireChk">3일 동안 열지 않기</label>
-            <button class="closeBtn">닫기</button>
-        </p>
-    </div>
+  <!-- cookie -->
+  <div id="notice_wrap">
+    <img src="../resources/kpr/bx-1.jpg" alt="fox" width="200px" height="auto"/>2022 MERRY CHRISTMAS! 🥳
+    <p class="closewrap">
+        <input type="checkbox" name="expireChk" id="expireChk" />
+        <label class="BodyBtn" for="expireChk">3일 동안 열지 않기</label>
+        <button class="closeBtn">닫기</button>
+    </p>
+</div>
   <header>
     <nav class="navbar bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../resources/images/kpr/logo.png" alt="brand_logo" width="80"
+        <a class="navbar-brand" href="#"><img src="../resources/kpr/logo.png" alt="brand_logo" width="80"
             class="d-inline-block align-text-top"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar">
@@ -93,7 +97,7 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../resources/images/kpr/logo.png"
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../resources/kpr/logo.png"
                 alt="brand_logo" width="120" class="d-inline-block align-text-top"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
@@ -205,6 +209,25 @@
                 </ul>
               </li>
             </ul>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../resources/kpr/car1.png" class="d-block w-100" alt="car1">
+                </div>
+                <div class="carousel-item">
+                  <img src="../resources/kpr/car2.png" class="d-block w-100" alt="car2">
+                </div>
+                <div class="carousel-item">
+                  <img src="../resources/kpr/car4.png" class="d-block w-100" alt="car3">
+                </div>
+                <div class="carousel-item">
+                  <img src="../resources/kpr/car6.png" class="d-block w-100" alt="car3">
+                </div>
+                <div class="carousel-item">
+                  <img src="../resources/kpr/car7.png" class="d-block w-100" alt="car3">
+                </div>
+              </div>
+            </div>
             <div class="sns btn-outline-success">
               <div class="snstext" style="color: #000; font-size: 12px; margin: 0 0 0 10px; text-align:center;">랜드로버 소셜
                 미디어</div>
@@ -217,102 +240,92 @@
           </div>
         </div>
     </nav>
+
   </header>
   <!-- Contents section-->
   <div id="wrapMe">
       <div id="layMe">
+
         <div id="conMe">
           <!--       Vehicle One -->
           <div class="slide showing">
-            <img src="../resources/images/kpr/rangeRoverSE-removebg-preview.png" />
+            <img src="../resources/kpr/rangeRoverSE-removebg-preview.png" />
             <div class="vehicle-details">
-              <h1>RANGE ROVER SE</h1>
+              <h1>THE NEW RANGE ROVER SPORT</h1>
               <div class="v-info">
                 <div class="v-info-item">
-                  STARTING AT
-                  <h2>$60,300</h2>
+                  가격 (원)
+                  <h2>₩134,000,000~</h2>
                 </div>
                 <div class="v-info-item">
-                  CITY/HWY UP TO
-                  <h2>21" Style 5112 <br>
-                    Perforated Windsor leather seats <br>
-                    20-way heated electric front seats with power recline heated rear seats <br>
-                    Premium LED headlights with signature DRL</h2>
+                  <h3>
+                    본능적인 감각. 생동감 넘치는 역동성. 타협하지 않는 퍼포먼스.<br>
+                  </h3>
                 </div>
               </div>
-  
-              <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
             </div>
+            <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
           </div>
           <!--       Vehicle One -->
           <!--       Vehicle Two -->
           <div class="slide">
-            <img src="../resources/images/kpr/RANGE_ROVER_VELAR_S-removebg-preview.png" alt="RANGE_ROVER_VELAR" />
+            <img src="../resources/kpr/RANGE_ROVER_VELAR_S-removebg-preview.png" alt="RANGE_ROVER_VELAR" />
             <div class="vehicle-details">
-              <h1>RANGE ROVER RANGE ROVER VELAR</h1>
+              <h1>RANGE ROVER VELAR</h1>
               <div class="v-info">
                 <div class="v-info-item">
-                  STARTING AT
-                  <h2>$52,600</h2>
+                  가격 (원)
+                  <h2>₩91,700,000~</h2>
                 </div>
                 <div class="v-info-item">
-                  CITY/HWY UP TO
-                  <h2>20" Style 5079 <br>
-                    Grained leather seat facings <br>
-                    12-way driver memory and 10-way passenger heated electric front seats <br>
-                    with 2-way manual headrests and rear centre armrest <br>
-                    Meridian™ Sound System</h2>
+                  <h2>
+                    아방가르드 레인지로버<br>
+                  </h2>
                 </div>
               </div>
-  
-              <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
             </div>
+            <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
           </div>
           <!--       Vehicle Two -->
           <!--       Vehicle Three -->
           <div class="slide">
-            <img src="../resources/images/kpr/DEFFENDER_X-DYNAMIC_SE-removebg-preview.png" alt="DEFFENDER_X-DYNAMIC_SE" />
+            <img src="../resources/kpr/DEFFENDER_X-DYNAMIC_SE-removebg-preview.png" alt="DEFFENDER_X-DYNAMIC_SE" />
             <div class="vehicle-details">
               <h1>DEFENDER X-DYNAMIC SE</h1>
               <div class="v-info">
                 <div class="v-info-item">
-                  STARTING AT
-                  <h2>$81,400</h2>
+                  가격 (원)
+                  <h2>₩88,600,000~</h2>
                 </div>
                 <div class="v-info-item">
-                  CITY/HWY UP TO
-                  <h2>20" Style 5094, Satin Dark Grey <br>
-                    Ebony/Ebony Grained Leather and Robustec Seat Facings with Ebony Interior <br>
-                    12-way Heated and Cooled Electric Memory Front Seats with 2-way Manual Headrests <br>
-                    Meridian™ Surround Sound System</h2>
+                  <h3>
+                    불가능을 가능으로 만드는 위대한 여정의 시작.<br>
+                  </h3>
                 </div>
               </div>
-  
-              <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
             </div>
+            <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
           </div>
           <!--       Vehicle Three -->
           <!--       Vehicle Four -->
           <div class="slide">
-            <img src="../resources/images/kpr/NEW_range_rover-removebg-preview.png" alt="NEWrangeRover"
+            <img src="../resources/kpr/NEW_range_rover-removebg-preview.png" alt="NEWrangeRover"
               alt="NEW RANGE ROVER SE" />
             <div class="vehicle-details">
-              <h1>NEW RANGE ROVER SV</h1>
+              <h1>THE NEW RANGE ROVER</h1>
               <div class="v-info">
                 <div class="v-info-item">
-                  STARTING AT
-                  <h2>$218,300</h2>
+                  가격 (원)
+                  <h2>₩177,600,000~</h2>
                 </div>
                 <div class="v-info-item">
-                  CITY/HWY UP TO
-                  <h2>22" Style 7023, Diamond Turned with Gloss Black contrast <br>
-                    24-way heated and cooled, hot stone massage electric front seats <br>
-                    with Executive Class Comfort Plus rear seats <br>
-                    Pixel LED headlights with signature DRL</h2>
+                  <h3>
+                    독보적인 품격과 럭셔리<br>
+                  </h3>
                 </div>
               </div>
-              <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
             </div>
+            <div class="btn"><a href="#" class="slide">SHOP NOW</a></div>
           </div>
           <!--       Vehicle Four -->
         </div>
@@ -320,26 +333,13 @@
         <div class="swapBtn">&lt;</div>
         <div class="swapBtn">&gt;</div>
         <!--     Swap Btns -->
-  
       </div>
     </div>
-  <!-- popUp Modal -->
-  <div id="modal">
-    <div class="modal_up">
-      <div class="uptitle">
-        New Year's Offers!
-       </div>
-       <div class="upbody">
-         We Offer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam enim tempora officia dignissimos ratione velit repudiandae minus expedita? Exercitationem pariatur rem, provident hic unde excepturi ipsum consequuntur officia soluta <br>         
-         Thank you! 🥰
-       </div>
-       <div class="modalBtn">closed</div>
-     </div>
    </div>
   </div>
   <!-- footer section -->
   <footer>
-
+<!-- vegas 영역 -->
     <!-- copyright -->
     <div class="cptext">
       &#169;JAGUAR LAND ROVER LIMITED 2022 : <br> 서울시 중구 수하동 67(중구 을지로5길 26) 미래에셋센터원빌딩 동관 13층 재규어 랜드로버
