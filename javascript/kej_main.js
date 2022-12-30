@@ -24,7 +24,7 @@ $(".visual_bg").vegas({
     overlay: '../resources/kej/vegas_overlay_04.png'  //배경이미지 위에 dot pattern 이미지 적용
 });
 
-// 홍보센터 영역에 Owl Carousel로이미지 슬라이드 효과 적용
+// 이벤트배너 영역에 Owl Carousel로이미지 슬라이드 효과 적용
 $('.imgslide').owlCarousel({
     loop:true,
     margin:20,
