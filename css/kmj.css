@@ -162,52 +162,6 @@ header {
   color: #000;
   font-weight: bold;
 }
-
-
-
-  /* 푸터 */
-footer {
-  background: rgb(255, 255, 255);
-  width: auto;
-  color: rgb(0, 0, 0);
-  height: auto;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-footer > p {
-  text-align: center !important;
-}
-footer div a {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  overflow: hidden;
-  margin-top: 15px;
-  opacity: 0.5;
-  color: white;
-}
-
-footer > div > a {
-  padding: 30px;
-}
-
-footer .insta {
-  background: url(../resources/kmj/kmj_ins.svg) 0 0 no-repeat;
-}
-footer .youtube {
-  background: url(../resources/kmj/kmj_youtube.svg) 0 0 no-repeat;
-}
-footer .twitter {
-  background: url(../resources/kmj/kmj_twitter.svg) 0 0 no-repeat;
-}
-
-
-
-
-
-
-
 /* 메인 인기 의류 부문 */
 h4{
   text-align: center;
@@ -250,16 +204,11 @@ h3{
 .txt{
   color: #999;
 }
-
-
-
   /* owl */
   .owl_main{
     text-align: center;
     padding-top: 20px;
   }
-
-
 
   /* 쿠키 */
   .ck{
@@ -290,4 +239,42 @@ h3{
     margin-left: 20px;
     cursor: pointer;
   }
+
+/* 푸터 */
+footer {
+  background: rgb(255, 255, 255);
+  width: auto;
+  color: rgb(0, 0, 0);
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer > p {
+  text-align: center !important;
+}
+footer div a {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+  opacity: 0.5;
+  color: white;
+}
+
+footer > div > a {
+  padding: 30px;
+}
+
+footer .insta {
+  background: url(../resources/kmj/kmj_ins.svg) 0 0 no-repeat;
+}
+footer .youtube {
+  background: url(../resources/kmj/kmj_youtube.svg) 0 0 no-repeat;
+}
+footer .twitter {
+  background: url(../resources/kmj/kmj_twitter.svg) 0 0 no-repeat;
+}
+
 
