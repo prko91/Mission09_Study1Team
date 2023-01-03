@@ -62,7 +62,7 @@ body {
   padding: 50px 0 50px 0;
 }
 
-/* Slider */
+/* vehicle-slide */
 #layMe {
   min-height: 450px;
   margin-top: 80px;
@@ -131,7 +131,7 @@ body {
   display: flex;
 }
 
-.slide {
+.vehicle-slide {
   display: none;
   align-items: center;
 }
@@ -165,11 +165,11 @@ body {
   }
 }
 
-.slide img {
+.vehicle-slide img {
   max-width: 50%;
 }
 
-.slide h1 {
+.vehicle-slide h1 {
   font-size: 30px;
   font-weight: bold;
   line-height: 100%;
@@ -178,7 +178,7 @@ body {
   font-family: 'Teko';
 }
 
-.slide .v-info-item {
+.vehicle-slide .v-info-item {
   display: inline-block;
   padding: 20px 30px;
   letter-spacing: 1.5px;
@@ -187,27 +187,11 @@ body {
   border-right: 1px dotted var(--colorOne);
 }
 
-.slide .v-info-item:nth-child(2n) {
+.vehicle-slide .v-info-item:nth-child(2n) {
   border: none;
 }
 
-.slide h2 {
-  margin: 0;
-  font-weight: 300;
-  line-height: 100%;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.slide h3 {
-  margin: 0;
-  font-weight: 300;
-  line-height: 100%;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.slide a.slide {
+.vehicle-slide a.vehicle-slide {
   width: 55px;
   cursor: pointer;
   font-size: 8px;
@@ -219,14 +203,14 @@ body {
   display: flex;
 }
 
-.btn a.slide:hover {
+.btn a.vehicle-slide:hover {
   text-decoration: underline;
   border-radius: 15px;
   border: 3px solid #fff;
   color: #fff;
 }
 
-a.slide {
+a.vehicle-slide {
   text-decoration: none;
   color: inherit;
   width: 100%;
@@ -284,20 +268,20 @@ a.slide {
     margin: 0 auto;
   }
 
-  .slide img {
+  .vehicle-slide img {
     display: block;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
 
-  .slide .vehicle-details {
+  .vehicle-slide .vehicle-details {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
 
-  .slide .btn {
+  .vehicle-slide .btn {
     margin: 20px auto;
   }
 
@@ -386,7 +370,7 @@ input {
   box-shadow: 0 0 0 8px rgb(0, 0, 0);
   z-index: 1000;
   cursor: pointer;
-  opacity: 70%;
+  opacity: 100%;
   font-size: 12px;
   text-align: center;
   background-color: #ccc;
