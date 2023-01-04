@@ -25,7 +25,7 @@ $(document).ready(function () {
       }
     });
 
-            // 베가스 적용
+   // 베가스 적용
   $(function(){
     $("header").vegas({
       delay : 3000,
