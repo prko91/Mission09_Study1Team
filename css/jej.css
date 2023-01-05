@@ -160,6 +160,24 @@ h3{
    background-color: #333333;
    background-blend-mode: multiply;
 }
+
+@media all and (max-width: 820px) {
+   .part1 {
+      width: 790px;
+   }
+}
+@media all and (max-width: 390px) {
+   h2 {
+      font-size: 50px;
+   }
+   .part1 {
+      width: 360px;
+   }
+   .part2 {
+      width: 360px;
+   }
+}
+
 /* footer */
 footer {
    clear: both;
