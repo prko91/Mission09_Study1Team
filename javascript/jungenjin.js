@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+
    // vages
    $('#main_visual').vegas({
       slides: [
@@ -25,4 +25,3 @@ jQuery(document).ready(function () {
             }
          });
    
-});
