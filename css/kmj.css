@@ -236,6 +236,7 @@ h3{
 /* 공지사항 */
 .cp{
   color: #000 !important;
+  font-weight: bold;
 }
 .contents{
   margin: 0 auto;
@@ -364,12 +365,10 @@ footer .youtube {
 footer .twitter {
   background: url(../resources/kmj/kmj_twitter.svg) 0 0 no-repeat;
 }
-footer > a{
-  color: #999;
-  border: none;
+ a{
+  color: rgb(0, 0, 0) !important;
+  border: none 
 }
-img a:hover{
-  transform: scale(1.4) !important;
-}
+
 
 
