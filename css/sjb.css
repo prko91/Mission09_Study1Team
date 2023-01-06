@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'KyoboHandwriting2020A';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 12px;
+    font-family: 'KyoboHandwriting2020A';
+}
+
+.layerPopup {
+  display:none;
+}
+.layerPopup:before {
+  display:block; content:""; 
+  position:fixed; 
+  left:0; top:0; width:100%; 
+  height:100%; 
+  background:rgba(0,0,0,.5);
+}
+.layerPopup .layerBox {
+  position:fixed;
+  left:50%; 
+  top:50%; 
+  transform:translate(-50%, -50%); 
+  padding:30px; background:#fff; 
+  border-radius:6px;
+}
+.layerPopup .layerBox .title {
+  margin-bottom:10px; 
+  padding-bottom:10px; 
+  font-weight:600; 
+  border-bottom:1px solid #d9d9d9;
+}
+.layerPopup .layerBox .cont {
+  margin-bottom:40px;
+}
+.layerPopup .layerBox p {
+  line-height:20px; font-size:13px;
+}
+.layerPopup .layerBox .btnClose {
+  display:inline-block; position:absolute; right:30px; top:25px; padding:6px 12px; color:#444; font-size:12px; text-decoration:underline;
+}
+.layerPopup .layerBox .btnTodayHide {
+  font-size:13px; font-weight:600; text-decoration:underline;
+}
+.bx-wrapper .bx-caption {
+  height: -webkit-fill-available;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.bx-wrapper  {
+  margin-top: 5%;
+  max-width: 650px;
+
+}
+
+.bx-wrapper .bx-caption span {
+  margin: 5% 0 0 15%;
+}
+.popbackground{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  z-index: 10000;
+}
+.noticepop{
+  border: 1px solid lightgray;
+  width:400px;
+  height:300px;
+  position: absolute;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+ 
+  }
+  .popwrap{
+  
+  margin-top:44%;
+   background-color: black;
+   color: #fff;
+   padding-bottom: 5px;
+   
+   
+}
+
+#popbackground-close{
+padding-left: 10px;
+padding-right: 10px;
+border-radius: 5px;
+text-align: center;
+margin-left: 64%;
+
+}
+
+.h2notice{
+ 
+ padding-top: 5px;
+ padding-bottom: 5px;
+ border-bottom: 1px solid black;
+}
+
+.h2notice , .pnotice{
+  padding-left: 20px;
+  text-align: center;
+}
+
+.bxslider > img{
+  max-width: 40%;
+}
+
+.sale_wrap{
+  position: relative;
+  border-radius: 5%;
+  margin-left: 5%;
+  background-color: #EAEAEA;
+  width: 80%;
+  height: 300px
+}
+
+.textwrap{
+ 
+  margin: 5% 0% 0% 2%;
+  padding-top: 10%;
+  text-align: left;
+  width: 10%;
+}
+
+.first_sale > img , .second_sale > img,.thrid_sale > img{
+  margin-left: 5%;
+  margin-top: 5%;
+  border: 1px solid black;
+  border-radius: 20%;
+  background-color: antiquewhite;
+  position: absolute;
+  z-index: 10;
+  max-width: 150px;
+  max-height: 150px;
+
+}
+.first_sale{
+ float: left;
+}
+.second_sale{
+margin: 0 5% 0 5%;
+
+}
+
+
+#first_sale_text ,#second_sale_text, #thrid_sale_text{
+position: absolute;
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.6);
+text-align: center;
+color: white;
+text-align: center;
+z-index: 20;
+max-width: 150px;
+max-height: 150px;
+width: 100%;
+height: 100%;
+border-radius: 20%;
+margin-top: 5%;
+margin-left: 5%;
+float: right;
+
+}
+#second_sale_text, #thrid_sale_text{
+  margin-left: 3%;
+}
+
+.first_sale:hover #first_sale_text , .second_sale:hover #second_sale_text, .thrid_sale:hover #thrid_sale_text{
+  opacity: 1
+}
+
+.snack_list{
+  max-width: 80%;
+  margin-left: 10%;
+  background-color: white;
+  margin-top: 5%;
+  
+  
+}
+content{
+  width: 50%;
+  background-color: wheat;
+}
+
+.card{
+  float: left;
+  margin-right: 5%;
+  margin-top: 2%;
+  max-width: 150px;
+  
+}
+
+.card1{
+  margin-left: 1.5rem;
+}
+
+.favorite{
+ min-height: 10%;
+ max-height: 70%;
+ background-color: #EAEAEA;
+ height: 500px;
+}
+
+.favorite > b{
+  padding-top: 3%;
+  margin-left: 40%;
+  font-size: 20px;
+}
+
+.notice_list>b{
+  font-size: 20px;
+  text-align: center;
+  margin-left: 20%;
+}
+
+
+.card-title ,.card>p , .card>.btn , .card-text {
+  margin-left: 20%;
+}
+
+.notice_list{
+  margin-top:15rem;
+  background-color: #EAEAEA;
+  margin-left: 5%;
+  max-width:80%;
+  padding: 5% 0% 5% 0%;
+}
+
+/* 푸터 시작 */
+
+footer{
+    width: 100%;
+   height: auto; 
+    float: left;
+    background: #EAEAEA;
+    color: black;
+    text-align: center;
+    margin-top: 15rem;
+  }
+  
+  .down_logo{
+    padding-top: 5%;
+    width: 35%;
+    height: 100%;
+    float: left;
+  
+  }
+  
+  .copyright{
+    padding-top: 5%;
+    width: 35%;
+    height: 80%;
+    float: left;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+  
+  
+  }
+
+  .sns{
+    margin-top: 5%;
+    width: 30%;
+    height: 100%;
+    float: right;
+  
+  }
+
+  /* 푸터 끝 */

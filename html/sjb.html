@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과자먹자 자주 묻는 질문</title>
+    <link rel="stylesheet" href="../css/sjb.css">
+    <!-- CSS only -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/vegas.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<script src="../javascript/jquery-3.3.1.min.js"></script>
+<script src="../javascript/vegas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="http://zeptojs.com/zepto.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="../javascript/jquery.cookie.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+      auto: true,
+      autoControls: true,
+      stopAutoOnClick: true,
+      pager: true,
+      slideWidth: 1000,
+      captions:true,
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <div class="popbackground">
+    <div class=noticepop>
+      <h2 class="h2notice">과자먹자 공지사항</h2>
+      <br>
+      <p class="pnotice">
+      겨울철 잦은 빙판길로 인해 배송이 늦어질 수 있습니다.<br>
+      자세한 사항은 공지사항 참조 바랍니다.<br>
+      </p>
+      <p class="popwrap">
+        <input type="checkbox" id="popbackground-check" name="chkbox">
+        <label for="chkbox">3일동안 열지 않기</label>
+        <button id="popbackground-close">닫기</button> 
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function(){ 
+      if($.cookie('smcookie')!='1111'){
+      $('.popbackground').show();
+      }
+    })
+  $('#popbackground-close').click(function(){
+    if($('#popbackground-check').is(":checked")==true){ 
+      $.cookie("smcookie","1111",{expires:3 , path: '/' })
+    }
+    $('.popbackground').css({'display':'none'}); 
+    })  
+  </script>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fas fa-cookie-bite"></i><span class="logoName">과자먹자</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">메인 홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">과자모음</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">선물하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">특가이벤트</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">구독하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">로그인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">로그아웃</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">자주 묻는 질문</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">찾기</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="slider_wrap">
+        <div class="col-3"></div>
+        <div class="bxslider col-8">
+          <div><img height="200px" width="100%" src="../resources/son/gift1.jpg" title="유통기한 임박상품<br>보러가기<br>sales up to 80%"></div>
+          <div><img height="200px" width="100%" src="../resources/son/gift2.jpg" title="수제과자<br>구독상품 준비중<br>입점목록 보러가기<br>"></div>
+          <div><img height="200px" width="100%" src="../resources/son/gift3.jpg" title="구독박스<br>가격대별<br>품목 보러가기"></div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sale_wrap">
+    <div class="container text-center">
+      <div class="row">
+        <div class="textwrap col-2 ">
+          <h1>첫 구독 <br>특가</h1><br>
+          <p>과자 구독이<br>
+            처음이신 분에게만 드리는<br>
+            <b>특가 이벤트</b>
+          </p>
+        </div>
+        <div class="first_sale col-2">
+          <p id="first_sale_text"><br><br><br>월 5,900원<br>패키지</p>
+          <img height="100px"  src="../resources/son/box1.png" alt="">
+        </div>
+        <div class="second_sale col-3">
+          <p id="second_sale_text"><br><br><br>월 9,900원<br>패키지</p>
+          <img height="100px" src="../resources/son/box2.png" alt="">
+        </div>
+        <div class="thrid_sale col-3">
+          <p id="thrid_sale_text"><br><br><br>월 19,900원<br>패키지</p>
+          <img height="100px" src="../resources/son/box3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <content>
+    <div class="snack_list">
+      <div class="row">
+          <div class="favorite"><b>실시간 인기 과자</b>
+        <div col-md-2 col-2></div>
+        <div class="card card1 col-2" style="width: 18rem;">
+          1
+          <img src="../resources/son/새우깡.jpg" class="card-img-top" alt="새우깡">
+          <div class="card-body">
+            <h5 class="card-title">농심<br> 새우깡</h5>
+            <p class="card-text">900원</p>
+            <a href="#" class="btn btn-primary">장바구니 담기</a>
+          </div>
+        </div>
+        <div class="card card2  col-2" style="width: 18rem;">
+          2
+          <img src="../resources/son/꼬북칩.jpg" class="card-img-top" alt="꼬북칩">
+          <div class="card-body">
+            <h5 class="card-title">오리온<br> 꼬북칩 콘스프맛</h5>
+            <p class="card-text">800원</p>
+            <a href="#" class="btn btn-primary">장바구니 담기</a>
+          </div>
+        </div>
+        <div class="card card3  col-2" style="width: 18rem;">
+          3
+          <img  src="../resources/son/홈런볼.jpg" class="card-img-top" alt="홈런볼">
+          <div class="card-body">
+            <h5 class="card-title">해태 <br>홈런볼</h5>
+            <p class="card-text">2600원</p>
+            <a href="#" class="btn btn-primary">장바구니 담기</a>
+          </div>
+        </div>
+        <div class="card card4  col-2" style="width: 18rem;">
+          4
+          <img src="../resources/son/꼬깔콘.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">롯데<br>꼬깔콘</h5>
+            <p class="card-text">800원</p>
+            <a href="#" class="btn btn-primary">장바구니 담기</a>
+          </div>
+        </div>
+      </div>
+      <div col-md-2 col-2></div>
+    </div>
+  </div>
+  <div class="notice_list">
+    <b>과자먹자 소식들</b><br>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="notice_wrap">
+        <ul class="list-group col-md-4">
+          <li class="list-group-item"><b>이번주 인기 상품</b></li>
+         <li class="list-group-item list-group-item-secondary">1. 새우깡</li>
+         <li class="list-group-item ">2. 몽쉘</li>
+         <li class="list-group-item list-group-item-secondary">3. 빼빼로</li>
+        </ul>
+        <div class="col-md-1"></div><br>
+        <ul class="list-group col-md-4">
+          <li class="list-group-item"><b>자주 묻는 질문</b></li>
+          <li class="list-group-item list-group-item-primary">1. 특가 관련</li>
+          <li class="list-group-item">2. 입금 관련</li>
+          <li class="list-group-item list-group-item-primary">3. 배송 관련</li>
+        </ul>
+      <div class="col-md-1"></div>
+      </div>
+    </div>
+  </div>
+  </content>
+
+  <!-- Vagas -->
+  <script>
+    $(document).ready(function() {
+      $('body').vegas({
+        delay: 3000,    
+        slides: [
+        { src: '../resources/son/spring.jpg' },
+        { src: '../resources/son/summer.jpg' },
+        { src: '../resources/son/fall.jpg' },
+        { src: '../resources/son/winter.jpg' },
+        ]
+      });
+    });
+  </script>
+  <!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "4ba7b603-b4a0-4e94-9636-3bece7c2e9f0"
+  });
+</script>
+<!-- End Channel Plugin -->
+
+
+ <!-- 푸터 -->
+  <footer>
+    <div class="down_logo col-md-4">
+      <span>
+        상호 : (주)과자먹자<br>
+        대표 : 이과자<br>
+       주소 : 서울특별시 용산구 한강대로 52-5 3층<br>
+       사업자 등록 번호 521-4567-99876<br>
+       제휴 문의 snackeat@snackeat.co.kr<br>       
+     </span>
+    </div>
+    <div class="copyright col-md-4">
+      <span>
+        <h2>고객 상담 센터</h2><br>
+        <h3>1588-4152</h3><br>
+        상담시간 : 오전 10:00 ~ 오후 5:00<br>
+        점심시간 : 오후 12:00 ~ 오후 1:00<br>         
+      </span>
+      <br>
+      <span>Copyright &copy; 과자먹자 . All rights reserved.</span><br>
+    </div>
+    <div class="sns col-md-4">
+      <div id="kind">
+        <img class="instar" width="30px" src="../resources/son/instagram_icon.png" alt="인스타">
+        <img class="youtube" width="30px" src="../resources/son/youtubelogoicon.svg" alt="유투브">
+        <img class="twitter" width="30px" src="../resources/son/twitter logo_icon.png" alt="트위터">
+      </div>
+    </div>
+  </footer>
+ 
+    </div>
+</body>
+</html>
+
